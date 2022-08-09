@@ -112,7 +112,7 @@ public class Frame_joinmember extends JFrame{
         cancel.setBorderPainted(false);   //테두리지우기
         cancel.setContentAreaFilled(false);   //안의 내용지우기
         cancel.setFocusPainted(false);       //입력됐을 때 모양 없애기
-        cancel.setBorder(null);
+        cancel.setBorder(null); //여백을(Border) 주지(set) 않겠다(null)
                 
         
            
