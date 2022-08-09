@@ -159,7 +159,9 @@ public class Frame_joinmember extends JFrame{
             JOptionPane.showMessageDialog(null, "아이디가 존재합니다. 다른 아이디를 입력해주세요.");
          } else {// 동일한 아이디가 없을 경우
          //파일 입출력을 통해 유저정보 저장
-         BufferedWriter bos = new BufferedWriter(new FileWriter("회원명단.txt",true));
+         BufferedWriter bos = new BufferedWriter(new FileWriter("회원명단.txt",true)); 
+            // bufferedwriter가 추가 한다라는 뜻으로 보시면 되시는데 회원명단 텍스트 파일에 이름 아이디 패스워드 주소 를 넣겠다고 보시면 되세요
+            //더 쉽게 말씀드리면 bufferedwriter를 사용하여 회원 가입으로 입력된 정보를 bufferedwriter를 통하여 텍스트 파일에 저장한다고 보시면 될거에요
          bos.write(t1.getText()+"/");
          bos.write(t2.getText()+"/");
          bos.write(t3.getText()+"/");
